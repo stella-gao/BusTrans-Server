@@ -27,9 +27,9 @@ public class TestRoute extends HttpServlet {
        
        	    String driver = "com.mysql.jdbc.Driver";
 	    String dbName = "sbs";
-	    String dbPwd = "2CBEpBKZhw9q4sfV";
-	    String dbUserName = "sbs_user";
-	    String url = "jdbc:mysql://128.235.90.197:3306/" + dbName;
+	    String dbPwd = "**************";
+    	    String dbUserName = "sbs_user";
+    	    String url = "jdbc:mysql://***.***.**.***:3306/" + dbName;
 	    String sqls = "select p_transfer,p_tarrived,p_oarrived from sbs_simpax_od where fid='%s' ";
 	    String sqls1 = "select p_oarrived,p_obus_id,p_tbus_id from sbs_simpax_od where fid='%s'"; 
 	    String sqls2 = "select b_class from sbs_simtrajs where b_traj_id in (select Max(b_traj_id)from sbs_simtrajs where b_vissim_id = '%s')";
