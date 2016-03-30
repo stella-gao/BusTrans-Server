@@ -32,9 +32,9 @@ public class TestHold extends HttpServlet {
 	
 	String driver = "com.mysql.jdbc.Driver";
     String dbName = "sbs";
-    String dbPwd = "2CBEpBKZhw9q4sfV";
+    String dbPwd = "**************";
     String dbUserName = "sbs_user";
-    String url = "jdbc:mysql://128.235.90.197:3306/" + dbName;
+    String url = "jdbc:mysql://***.***.**.***:3306/" + dbName;
     String sqli1 = "update sbs.sbs_simpax_od set sbs.sbs_simpax_od.p_hold_request = '%s' where fid = '%1s'";
     String sqls = "select p_hold_success from sbs.sbs_simpax_od where fid='%s'";
     public static String fid=null;
