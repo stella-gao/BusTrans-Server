@@ -27,9 +27,9 @@ public class TestQuery extends HttpServlet {
 	
 	String driver = "com.mysql.jdbc.Driver";
     String dbName = "sbs";
-    String dbPwd = "2CBEpBKZhw9q4sfV";
+    String dbPwd = "**************";
     String dbUserName = "sbs_user";
-    String url = "jdbc:mysql://128.235.90.197:3306/" + dbName;
+    String url = "jdbc:mysql://***.***.**.***:3306/" + dbName;
     String sqls = "select ptoBusArrT,podBusArrT from sbs_simpax_od where fid='%s' ";
     public static String fid = null;
 	/**
