@@ -28,9 +28,9 @@ public class TestInput extends HttpServlet {
 	
 	String driver = "com.mysql.jdbc.Driver";
     String dbName = "sbs";
-    String dbPwd = "2CBEpBKZhw9q4sfV";
-    String dbUserName = "sbs_user";
-    String url = "jdbc:mysql://128.235.90.197:3306/" + dbName;
+    String dbPwd = "*************";
+    String dbUserName = "*******";
+    String url = "jdbc:mysql://***.***.***.***:3306/" + dbName;
 
     String sqli = "insert into sbs_simpax_od (fid, arrTime,p_ort_no,p_odir,p_osp_id,p_drt_no,p_tdir,p_dsp_id) values ('%1$s','%2$s','%3$s','%4$s','%5$s','%6$s','%7$s','%8$s')";
     String sql = "select * from sbs_simpax_od  where fid='%1$s'";
