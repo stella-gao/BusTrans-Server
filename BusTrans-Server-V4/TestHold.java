@@ -32,9 +32,9 @@ public class TestHold extends HttpServlet {
 	
 	String driver = "com.mysql.jdbc.Driver";
     String dbName = "sbs";
-    String dbPwd = "2CBEpBKZhw9q4sfV";
-    String dbUserName = "sbs_user";
-    String url = "jdbc:mysql://128.235.90.197:3306/" + dbName;
+        String dbPwd = "*************";
+    String dbUserName = "*******";
+    String url = "jdbc:mysql://***.***.***.***:3306/" + dbName;
     //String sqli1 = "update sbs.sbs_simpassx set sbs_simpassx.p_hold_request = '%s' where fid = '%1s'";
     String sqli1 = "create view lastTime as select Max(sbs_simpassx.arrTime) from sbs_simpassx where sbs_simpassx.fid='%s'";
     String sqli2 = "update sbs.sbs_simpassx set sbs_simpassx.p_hold_request = '1' where fid = '%s' and arrTime in (select * from lastTime)";
