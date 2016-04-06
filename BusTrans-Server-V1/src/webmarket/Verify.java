@@ -32,9 +32,9 @@ public class Verify extends HttpServlet {
 	
 	String driver = "com.mysql.jdbc.Driver";
     String dbName = "sbs";
-    String dbPwd = "2CBEpBKZhw9q4sfV";
+    String dbPwd = "*************";
     String dbUserName = "sbs_user";
-    String url = "jdbc:mysql://128.235.90.197:3306/" + dbName;
+    String url = "jdbc:mysql://***.***.***.***:3306/" + dbName;
 	
     String sqls = "select p_next_delay from sbs_simpassx where fid='%s'and arrTime = '%2s' ";
     
@@ -162,7 +162,7 @@ public class Verify extends HttpServlet {
 	        }
 
 	        
-	        // ¹Ø±Õ¼ÇÂ¼¼¯
+	        // å…³é—­è®°å½•é›†
 	        if (rs != null) {
 	            try {
 	                rs.close();
@@ -170,7 +170,7 @@ public class Verify extends HttpServlet {
 	                e.printStackTrace();
 	            }
 	        }
-	        // ¹Ø±ÕÉùÃ÷
+	        // å…³é—­å£°æ˜Ž
 	        if (ps != null) {
 	            try {
 	                ps.close();
@@ -178,7 +178,7 @@ public class Verify extends HttpServlet {
 	                e.printStackTrace();
 	            }
 	        }
-	        // ¹Ø±ÕÁ´½Ó¶ÔÏó
+	        // å…³é—­é“¾æŽ¥å¯¹è±¡
 	        if (conn != null) {
 	            try {
 	                conn.close();
@@ -218,7 +218,7 @@ public class Verify extends HttpServlet {
 //                e.printStackTrace();
 //            }
 //        }
-//        // ¹Ø±ÕÁ´½Ó¶ÔÏó	        
+//        // å…³é—­é“¾æŽ¥å¯¹è±¡	        
 //        if (conn != null) {
 //            try {
 //                conn.close();
@@ -253,7 +253,7 @@ private String doInsert(){
                 e.printStackTrace();
             }
         }
-        // ¹Ø±ÕÁ´½Ó¶ÔÏó	        
+        // å…³é—­é“¾æŽ¥å¯¹è±¡	        
         if (conn != null) {
             try {
                 conn.close();
