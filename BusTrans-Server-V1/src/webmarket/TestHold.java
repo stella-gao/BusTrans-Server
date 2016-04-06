@@ -32,9 +32,9 @@ public class TestHold extends HttpServlet {
 	
 	String driver = "com.mysql.jdbc.Driver";
     String dbName = "sbs";
-    String dbPwd = "2CBEpBKZhw9q4sfV";
+    String dbPwd = "*****************";
     String dbUserName = "sbs_user";
-    String url = "jdbc:mysql://128.235.90.197:3306/" + dbName;
+    String url = "jdbc:mysql://***.***.***.***:3306/" + dbName;
     String sqli1 = "update sbs.sbs_simpassx set sbs_simpassx.p_hold_request = '%s' where fid = '%1s'";
     String sqls = "select p_hold_success from sbs_simpassx where fid='%s'";
     public static String fid=null;
@@ -102,7 +102,7 @@ public class TestHold extends HttpServlet {
 	        }
 	        
 	        
-	        // ¹Ø±Õ¼ÇÂ¼¼¯
+	        // å…³é—­è®°å½•é›†
 	        if (rs != null) {
 	            try {
 	                rs.close();
@@ -110,7 +110,7 @@ public class TestHold extends HttpServlet {
 	                e.printStackTrace();
 	            }
 	        }
-	        // ¹Ø±ÕÉùÃ÷
+	        // å…³é—­å£°æ˜Ž
 	        if (ps != null) {
 	            try {
 	                ps.close();
@@ -118,7 +118,7 @@ public class TestHold extends HttpServlet {
 	                e.printStackTrace();
 	            }
 	        }
-	        // ¹Ø±ÕÁ´½Ó¶ÔÏó
+	        // å…³é—­é“¾æŽ¥å¯¹è±¡
 	        if (conn != null) {
 	            try {
 	                conn.close();
@@ -155,7 +155,7 @@ private String doUpdate(){
                 e.printStackTrace();
             }
         }
-        // ¹Ø±ÕÁ´½Ó¶ÔÏó	        
+        // å…³é—­é“¾æŽ¥å¯¹è±¡	        
         if (conn != null) {
             try {
                 conn.close();
